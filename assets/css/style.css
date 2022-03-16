@@ -56,6 +56,7 @@
         padding: 0px;
         margin: 0 auto;
         font-weight: 400;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -799,7 +800,7 @@
     }
 
     ._why_buddy_slider {
-        padding: 100px 0;
+        margin: 100px 0;
     }
 
     ._why_buddy_slider_list {
@@ -823,6 +824,49 @@
     .splide__pagination__page.is-active {
         opacity: 1;
         transition: .2s all ease;
+    }
+
+    ._why_buddy_slider_arrows {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ._why_prev,
+    ._why_next {
+        background: #D7D3CF;
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transition: .2s all ease;
+    }
+
+    ._why_prev:hover,
+    ._why_next:hover {
+        background: #2d3dcf;
+    }
+
+    ._why_prev:hover svg path,
+    ._why_next:hover svg path {
+        fill: #D7D3CF;
+    }
+
+    ._why_prev svg path,
+    ._why_next svg path {
+        transition: .2s all ease;
+    }
+
+    ._why_buddy_wrap {
+        overflow: hidden;
+    }
+
+    ._why_buddy_slider_wrap {
+        position: relative;
     }
 
     /*--------------
@@ -856,7 +900,7 @@
         }
 
         ._why_buddy_slider_item_inner {
-            padding: 40px 15px 40px 25px;
+            padding: 20px 20px 40px 35px;
         }
     }
 
@@ -893,7 +937,15 @@
     /* Ipad/Mobile L */
     /* Mobile */
 
-    @media only screen and (max-width: 575px) {}
+    @media only screen and (max-width: 575px) {
+
+        ._why_prev,
+        ._why_next {
+            width: 50px;
+            height: 50px;
+            padding: 17px;
+        }
+    }
 
     @media only screen and (max-width: 420px) {
         ._why_buddy_title {
@@ -1278,8 +1330,10 @@
     }
 
     ._web_buddy_slider_con_img {
-        max-width: 450px;
+        width: 446px;
         margin: auto;
+        height: 280px;
+        object-fit: cover;
     }
 
     ._web_buddy_slider_arrows {
@@ -1307,6 +1361,11 @@
         ._web_buddy_slider_monitor {
             max-width: 540px;
         }
+
+        ._web_buddy_slider_con_img {
+            width: 380px;
+            height: 230px;
+        }
     }
 
     /* Desktop/Laptop */
@@ -1325,6 +1384,11 @@
         ._web_buddy_slider_monitor {
             max-width: 460px;
             top: 270px;
+        }
+
+        ._web_buddy_slider_con_img {
+            width: 320px;
+            height: 195px;
         }
     }
 
@@ -1363,6 +1427,11 @@
         ._web_next svg {
             max-width: 60%;
         }
+
+        ._web_buddy_slider_con_img {
+            width: 230px;
+            height: 145px;
+        }
     }
 
     /* Ipad pro */
@@ -1384,11 +1453,6 @@
             top: 200px;
         }
 
-        ._web_buddy_slider_con_img {
-            max-width: 70%;
-            margin: auto;
-        }
-
         ._web_buddy_slider_con_btm_wrap {
             margin: 120px 0 0;
         }
@@ -1400,16 +1464,17 @@
         ._web_buddy_slider ._web_buddy_slider_con_wrap {
             transform: scale(1);
         }
+
+        ._web_buddy_slider_con_img {
+            width: 350px;
+            height: 220px;
+        }
     }
 
     /* Ipad/Mobile L */
     /* Mobile */
 
     @media only screen and (max-width: 575px) {
-        ._web_buddy_slider_con_img {
-            max-width: 60%;
-        }
-
         ._web_buddy_slider_monitor {
             left: 20%;
             transform: translate(-10%, 0);
@@ -1419,16 +1484,38 @@
             left: 20%;
             transform: translate(-12%, 0);
         }
+
+        ._web_buddy_slider_con_img {
+            width: 330px;
+            height: 195px;
+        }
+    }
+
+    @media only screen and (max-width: 540px) {
+
+        ._web_buddy_slider_con_img {
+            width: 300px;
+            height: 180px;
+        }
     }
 
     @media only screen and (max-width: 420px) {
-        ._web_buddy_slider_con_img {
-            max-width: 80%;
-        }
-
         ._web_buddy_slider_monitor {
             left: 0%;
             transform: translate(0%, 10%);
+        }
+
+        ._web_buddy_slider_con_img {
+            width: 280px;
+            height: 180px;
+        }
+    }
+
+    @media only screen and (max-width: 393px) {
+
+        ._web_buddy_slider_con_img {
+            width: 270px;
+            height: 165px;
         }
     }
 
@@ -1451,6 +1538,18 @@
 
         ._web_buddy_slider_monitor {
             top: 155px;
+        }
+
+        ._web_buddy_slider_con_img {
+            width: 255px;
+            height: 160px;
+        }
+    }
+
+    @media only screen and (max-width: 325px) {
+        ._web_buddy_slider_con_img {
+            width: 225px;
+            height: 135px;
         }
     }
 
@@ -1782,6 +1881,8 @@
     /*-----------------------
    App presentation ends
 -------------------------*/
+
+
 
     /*-----------------------
    Pricing start
@@ -2143,7 +2244,403 @@
     /*-----------------------
    Pricing ends
 -------------------------*/
+    /*-----------------------
+   HLS start
+-------------------------*/
+    ._hls_buddy_wrapper {
+        padding: 200px 0 0;
+    }
 
+    ._hls_buddy_left_wrap {
+        padding: 50px 0;
+    }
+
+    ._hls_buddy_left_title {
+        font-family: Airbnb Cereal App;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 1.2;
+        color: #CCC8C4;
+        max-width: 80%;
+    }
+
+    ._hls_buddy_left_txt {
+        font-family: Questrial;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #E2DEDA;
+        opacity: 0.7;
+        max-width: 80%;
+        margin: 10px 0 0;
+    }
+
+    ._hls_buddy_right_wrap {
+        position: relative;
+    }
+
+    ._hls_buddy_right_circle {
+        border: 2px dashed #2F2F2F;
+        box-sizing: border-box;
+        display: block;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background: transparent;
+        margin: 0 auto;
+    }
+
+    ._hls_buddy_right_item_box_title {
+        font-family: 'Airbnb Cereal App';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #CCC8C4;
+        margin: 0 10px;
+    }
+
+    ._hls_buddy_right_item_box_icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #363A3E;
+        flex: 0 0 auto;
+    }
+
+    ._hls_buddy_right_item_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #27292C;
+        border-radius: 5px;
+        max-width: fit-content;
+        padding: 15px 40px;
+        transition: .2s background ease;
+        width: 300px;
+        word-break: break-word;
+    }
+
+    ._hls_buddy_right_item_box:hover {
+        background: #28369C;
+    }
+
+    ._hls_buddy_right_item_content_box_title {
+        font-family: 'Airbnb Cereal App';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 36px;
+        color: #CCC8C4;
+    }
+
+    ._hls_buddy_right_item_content_box_txt {
+        font-family: 'Questrial';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.6;
+        color: #E2DEDA;
+        opacity: 0.8;
+    }
+
+    ._hls_buddy_right_item_content_box {
+        background: #262528;
+        border-radius: 10px;
+        max-width: 280px;
+        padding: 30px 40px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+    }
+
+    ._hls_item1_box {
+        position: absolute;
+        left: 50px;
+        top: 0;
+        cursor: initial;
+        z-index: 10;
+    }
+
+    ._hls_item1_content_box {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s all ease;
+    }
+
+    ._hls_buddy_right_item1:hover ._hls_item1_content_box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    ._hls_item2_box {
+        position: absolute;
+        right: 0px;
+        top: 30px;
+        z-index: 10;
+    }
+
+    ._hls_item2_content_box {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s all ease;
+
+    }
+
+    ._hls_buddy_right_item2:hover ._hls_item2_content_box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    ._hls_item3_box {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        z-index: 10;
+    }
+
+    ._hls_item3_content_box {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s all ease;
+
+    }
+
+    ._hls_buddy_right_item3:hover ._hls_item3_content_box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    ._hls_item4_box {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        z-index: 10;
+    }
+
+    ._hls_item4_content_box {
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s all ease;
+
+    }
+
+    ._hls_buddy_right_item4:hover ._hls_item4_content_box {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /*--------------
+    Responsive
+---------------*/
+    /* Desktop/Laptop */
+
+    @media only screen and (max-width: 1500px) {}
+
+    @media (max-width: 1399px) {
+        ._hls_buddy_left_title {
+            max-width: 100%;
+        }
+
+        ._hls_buddy_left_txt {
+            max-width: 100%;
+        }
+    }
+
+    /* Desktop/Laptop */
+    /* Ipad pro */
+
+    @media only screen and (max-width: 1199px) {
+        ._hls_buddy_left_title {
+            font-size: 40px;
+            max-width: 80%;
+        }
+
+        ._hls_item2_box {
+            position: absolute;
+            right: -70px;
+            top: 0px;
+            z-index: 10;
+        }
+
+        ._hls_item4_box {
+            position: absolute;
+            right: -40px;
+            bottom: 10px;
+            z-index: 10;
+        }
+
+        ._hls_item1_box {
+            position: absolute;
+            left: -50px;
+            top: -10px;
+            cursor: initial;
+            z-index: 10;
+        }
+
+        ._hls_item3_box {
+            position: absolute;
+            left: -30px;
+            bottom: 0px;
+            z-index: 10;
+        }
+    }
+
+    /* Ipad pro */
+
+    @media only screen and (max-width: 991px) {
+        ._hls_buddy_wrapper {
+            padding: 100px 0;
+        }
+
+        ._hls_item1_box {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            cursor: initial;
+            z-index: 10;
+        }
+
+        ._hls_item2_box {
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            z-index: 10;
+        }
+
+        ._hls_item3_box {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: 10;
+        }
+
+        ._hls_item4_box {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            z-index: 10;
+        }
+
+        ._hls_buddy_left_wrap {
+            padding: 0px 0 100px;
+        }
+
+        ._hls_buddy_left_title {
+            font-size: 34px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        ._hls_buddy_left_txt {
+            text-align: center;
+            font-size: 14px;
+            max-width: 70%;
+            margin: 10px auto 0;
+        }
+    }
+
+    /* Ipad pro */
+    /* Ipad/Mobile L */
+
+    @media only screen and (max-width: 767px) {}
+
+    /* Ipad/Mobile L */
+    /* Mobile */
+
+    @media only screen and (max-width: 575px) {}
+
+    @media only screen and (max-width: 420px) {
+        ._hls_buddy_right_circle {
+            width: 350px;
+            height: 350px;
+        }
+
+        ._hls_buddy_right_item_box {
+            padding: 10px;
+        }
+
+        ._hls_buddy_right_item_box_title {
+            font-size: 15px;
+        }
+
+        ._hls_buddy_right_item_content_box {
+            width: 250px;
+            padding: 20px;
+            max-width: initial;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        ._hls_item1_box {
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            cursor: initial;
+            z-index: 10;
+            transform: translate(-50%, -100%);
+        }
+
+        ._hls_item2_box {
+            position: absolute;
+            right: 50%;
+            top: 0px;
+            z-index: 10;
+            transform: translate(50%, 0);
+        }
+
+        ._hls_item3_box {
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            z-index: 10;
+            transform: translate(-50%, 100%);
+        }
+
+        ._hls_item4_box {
+            position: absolute;
+            right: 50%;
+            bottom: 0px;
+            z-index: 10;
+            transform: translate(50%, 0);
+        }
+
+        ._hls_buddy_right_circle {
+            width: 300px;
+            height: 300px;
+        }
+
+        ._hls_buddy_left_title {
+            font-size: 28px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        ._hls_buddy_left_txt {
+            text-align: center;
+            font-size: 14px;
+            max-width: 100%;
+            margin: 10px auto 0;
+        }
+
+    }
+
+    @media only screen and (max-width: 360px) {}
+
+    @media only screen and (max-width: 340px) {}
+
+
+    /* Mobile */
+    /*------------------
+    Responsive Ends
+    -------------------------*/
+    /*-----------------------
+   HLS ends
+-------------------------*/
 
     /*-----------------------
    Faq start
@@ -2337,372 +2834,6 @@
 -------------------------*/
 
 
-
-    /*-----------------------
-   Testimonial start
--------------------------*/
-
-    ._testi_buddy_wrapper {
-        padding: 160px 0 0;
-    }
-
-    ._testi_buddy_wrap {
-        overflow: hidden;
-    }
-
-    ._testi_buddy_title {
-        font-family: 'Airbnb Cereal App';
-        font-weight: 500;
-        font-size: 52px;
-        line-height: 1.2;
-        text-align: center;
-        color: #CCC8C4;
-    }
-
-    ._testi_buddy_txt {
-        font-family: 'Questrial';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.6;
-        text-align: center;
-        color: #E2DEDA;
-        opacity: 0.7;
-    }
-
-    ._testi_buddy_title_wrap {
-        max-width: 45%;
-        margin: 0 auto;
-    }
-
-    ._testi_buddy_map_wrap {
-        margin: 80px 0 0;
-    }
-
-    ._testi_buddy_map {
-        position: relative;
-    }
-
-    ._testi_buddy_map_custom_wrap {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    ._testi_buddy_map_custom_card_wrap {
-        position: absolute;
-        transform: translate(-100%, -60%);
-        background: #C3644E;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        z-index: 9999;
-    }
-
-    ._testi_buddy_map_custom_card_wrap._card1_wrap {
-        top: 8%;
-        right: 21%;
-        transform: translate(5px, 20px);
-    }
-
-    ._testi_buddy_map_custom_card_wrap._card2_wrap {
-        top: 20%;
-        right: 50%;
-        transform: translate(7px, 15px);
-    }
-
-    ._testi_buddy_map_custom_card_wrap._card3_wrap {
-        bottom: 45%;
-        right: 50%;
-        transform: translate(13px, 18px);
-    }
-
-    ._testi_buddy_map_custom_card_wrap._card4_wrap {
-        top: 14%;
-        left: 13%;
-        transform: translate(7px, 15px);
-    }
-
-    ._testi_buddy_map_custom_card {
-        width: 280px;
-        position: absolute;
-        transition: .2s all ease;
-        visibility: hidden;
-        opacity: 0;
-        background: rgba(53, 51, 54, 0.5);
-        backdrop-filter: blur(12px);
-        padding: 16px 25px 25px 16px;
-    }
-
-    ._testi_buddy_map_custom_card._card1 {
-        bottom: -170px;
-        left: -280px;
-        border-radius: 10px 0px 10px 10px;
-    }
-
-    ._testi_buddy_map_custom_card._card2 {
-        top: -170px;
-        right: -280px;
-        border-radius: 10px 10px 10px 0px;
-    }
-
-    ._testi_buddy_map_custom_card._card3 {
-        bottom: -170px;
-        right: -280px;
-        border-radius: 0px 10px 10px 10px;
-    }
-
-    ._testi_buddy_map_custom_card._card4 {
-        bottom: -170px;
-        right: -280px;
-        border-radius: 0px 10px 10px 10px;
-    }
-
-    ._testi_buddy_map_custom_card_wrap:hover ._testi_buddy_map_custom_card {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    ._testi_buddy_map_custom_card_top_img {
-        max-width: 48px;
-    }
-
-    ._testi_buddy_map_custom_card_top_right_title {
-        font-family: 'Airbnb Cereal App';
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.6;
-        color: #D7D3CF;
-    }
-
-    ._testi_buddy_map_custom_card_top_right_txt {
-        font-family: 'Questrial';
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.6;
-        color: #D2CBCB;
-        opacity: 0.7;
-        margin: 0;
-    }
-
-    ._testi_buddy_map_custom_card_top_wrap {
-        display: flex;
-        align-items: center;
-    }
-
-    ._testi_buddy_map_custom_card_top_right_wrap {
-        margin-left: 10px;
-    }
-
-    ._testi_buddy_map_custom_card_txt {
-        font-family: 'Questrial';
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.6;
-        color: #E2DEDA;
-        opacity: 0.8;
-        margin: 16px 0 0;
-    }
-
-    /*--------------
-    Responsive
----------------*/
-    /* Desktop/Laptop */
-
-    @media only screen and (max-width: 1500px) {}
-
-    @media (max-width: 1399px) {}
-
-    /* Desktop/Laptop */
-    /* Ipad pro */
-
-    @media only screen and (max-width: 1199px) {
-        ._testi_buddy_title_wrap {
-            max-width: 60%;
-        }
-
-        ._testi_buddy_title {
-            font-size: 46px;
-        }
-
-        ._testi_buddy_map_custom_card_wrap._card2_wrap {
-            z-index: 1;
-        }
-
-        ._testi_buddy_map_custom_card._card2 {
-            left: -280px;
-            border-radius: 10px 10px 0px 10px;
-        }
-    }
-
-    /* Ipad pro */
-
-    @media only screen and (max-width: 991px) {
-        ._testi_buddy_wrapper {
-            padding: 110px 0 0;
-        }
-
-        ._testi_buddy_title {
-            font-size: 34px;
-        }
-
-        ._testi_buddy_txt {
-            font-size: 14px;
-            margin: 16px 0 0;
-        }
-
-        ._testi_buddy_map_custom_card_wrap {
-            width: 12px;
-            height: 12px;
-        }
-
-        ._testi_buddy_map_custom_card_wrap._card1_wrap {
-            top: 5%;
-            right: 21%;
-            transform: translate(4px, 20px);
-        }
-
-        ._testi_buddy_map_custom_card_wrap._card2_wrap {
-            top: 17%;
-            right: 50%;
-            transform: translate(7px, 15px);
-            z-index: 2;
-        }
-
-        ._testi_buddy_map_custom_card._card2 {
-            left: -280px;
-            border-radius: 10px 10px 0 10px;
-        }
-
-        ._testi_buddy_map_custom_card_wrap._card3_wrap {
-            bottom: 46%;
-            right: 50%;
-            transform: translate(10px, 16px);
-            z-index: 1;
-        }
-
-        ._testi_buddy_map_custom_card_wrap._card4_wrap {
-            top: 12%;
-            left: 12%;
-            transform: translate(9px, 15px);
-            z-index: 1;
-        }
-
-        ._testi_buddy_map_custom_card._card4 {
-            top: -180px;
-            bottom: auto;
-            border-radius: 10px 10px 10px 0;
-        }
-    }
-
-    /* Ipad pro */
-    /* Ipad/Mobile L */
-
-    @media only screen and (max-width: 767px) {
-        ._testi_buddy_title_wrap {
-            max-width: 80%;
-        }
-
-        ._testi_buddy_wrap {
-            overflow: visible;
-        }
-    }
-
-    /* Ipad/Mobile L */
-    /* Mobile */
-
-    @media only screen and (max-width: 575px) {
-        ._testi_buddy_map_custom_card {
-            width: 220px;
-        }
-
-        ._testi_buddy_map_custom_card._card1 {
-            bottom: -180px;
-            left: -220px;
-        }
-
-        ._testi_buddy_map_custom_card._card3 {
-            bottom: -180px;
-            right: -220px;
-        }
-
-        ._testi_buddy_map_custom_card._card2 {
-            left: -220px;
-            top: -180px;
-        }
-
-        ._testi_buddy_map_custom_card._card4 {
-            right: -220px;
-        }
-
-
-    }
-
-    @media only screen and (max-width: 420px) {
-        ._testi_buddy_map_custom_card._card2 {
-            left: -180px;
-            top: -190px;
-            border-radius: 10px;
-        }
-
-        ._testi_buddy_map_custom_card._card3 {
-            bottom: -200px;
-            right: -150px;
-            border-radius: 10px;
-        }
-
-        ._testi_buddy_title_wrap {
-            max-width: 100%;
-        }
-    }
-
-    @media only screen and (max-width: 375px) {
-        ._testi_buddy_wrapper {
-            padding: 50px 0 0;
-        }
-
-        ._testi_buddy_title {
-            font-size: 28px;
-        }
-
-        ._testi_buddy_map_custom_card_wrap {
-            width: 8px;
-            height: 8px;
-        }
-
-        ._testi_buddy_map_custom_card {
-            width: 180px;
-            padding: 15px;
-        }
-
-        ._testi_buddy_map_custom_card._card4 {
-            right: -180px;
-            top: -190px;
-        }
-
-        ._testi_buddy_map_custom_card._card2 {
-            left: -150px;
-        }
-
-        ._testi_buddy_map_custom_card._card1 {
-            bottom: -190px;
-            left: -180px;
-        }
-
-        ._testi_buddy_map_custom_card._card3 {
-            right: -110px;
-        }
-    }
-
-    /* Mobile */
-    /*------------------
-    Responsive Ends
-------------------*/
-
-    /*-----------------------
-   Testimonial ends
--------------------------*/
 
     /*-----------------------
    footer start
@@ -2932,47 +3063,6 @@
 
 
 
-
-
-
-
-
-    /*--------------
-    Responsive
----------------*/
-    /* Desktop/Laptop */
-
-    @media only screen and (max-width: 1500px) {}
-
-    @media (max-width: 1399px) {}
-
-    /* Desktop/Laptop */
-    /* Ipad pro */
-
-    @media only screen and (max-width: 1199px) {}
-
-    /* Ipad pro */
-
-    @media only screen and (max-width: 991px) {}
-
-    /* Ipad pro */
-    /* Ipad/Mobile L */
-
-    @media only screen and (max-width: 767px) {}
-
-    /* Ipad/Mobile L */
-    /* Mobile */
-
-    @media only screen and (max-width: 575px) {}
-
-    @media only screen and (max-width: 420px) {}
-
-    @media only screen and (max-width: 375px) {}
-
-    /* Mobile */
-    /*------------------
-    Responsive Ends
-------------------*/
     /*------------------
     Variable
 ------------------*/

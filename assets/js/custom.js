@@ -6,56 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline();
 
 
-// let anchor = document.querySelector(a);
-// let anchor = document.querySelectorAll('a, ._hero_buddy_header_interaction');
-
-// let cursor = $(".cursor"),
-//     follower = $(".cursor-follower");
-
-// let posX = 0,
-//     posY = 0;
-
-// let mouseX = 0,
-//     mouseY = 0;
-
-// gsap.to({}, {
-//     duration: 0.01,
-//     repeat: -1,
-//     onRepeat: function () {
-//         posX += (mouseX - posX) / 9;
-//         posY += (mouseY - posY) / 9;
-
-//         gsap.set(follower, {
-//             css: {
-//                 left: posX - 12,
-//                 top: posY - 12
-//             }
-//         });
-
-//         gsap.set(cursor, {
-//             css: {
-//                 left: mouseX,
-//                 top: mouseY
-//             }
-//         });
-//     }
-// });
-
-// $(document).on("mousemove", function (e) {
-//     mouseX = e.clientX;
-//     mouseY = e.clientY;
-// });
-// // yellow circle
-// $(anchor).on("mouseenter", function () {
-//     cursor.addClass("active");
-//     follower.addClass("active");
-// });
-// $(anchor).on("mouseleave", function () {
-//     cursor.removeClass("active");
-//     follower.removeClass("active");
-// });
-
-
 tl.from("._hero_buddy_emo_item", {
         y: 0,
         x: 0,
@@ -111,7 +61,7 @@ gsap.to("._interaction_img", {
 const scenes = gsap.utils.toArray('._app_buddy_content_item');
 
 // maybe use dymanic height for pin/scroll ends?
-const height = ((scenes.length - 1) * 200) + '%';
+const height = ((scenes.length - 1) * 100) + '%';
 
 // Scenes Timeline
 const pinTl = gsap.timeline({
@@ -137,12 +87,12 @@ scenes.forEach(function (elem, i) {
         // Scene Enter animations
         pinTl.from(elem.querySelector('._app_buddy_content_item_right'), {
             autoAlpha: 0,
-            translateY: -100
+            translateY: -50
         }, i)
 
         pinTl.from(elem.querySelector('._app_buddy_content_item_left'), {
             autoAlpha: 0,
-            translateY: 100
+            translateY: 50
         }, i)
     }
 
@@ -150,7 +100,7 @@ scenes.forEach(function (elem, i) {
     if (i != scenes.length - 1) {
         pinTl.to(elem.querySelector('._app_buddy_content_item_right'), {
             autoAlpha: 0,
-            translateY: 100
+            translateY: 50
         }, i + 0.5)
         pinTl.to(elem.querySelector('._app_buddy_content_item_left'), {
             autoAlpha: 0

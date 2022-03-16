@@ -1,19 +1,29 @@
 new Splide('._why_buddy_slider', {
     type: 'loop',
     perPage: 3,
-    padding: 0,
     focus: 'center',
-    gap: 30,
+    gap: 40,
+
+    padding: {
+        left: 5,
+        right: 150
+    },
     autoplay: true,
-    interval: 1500,
+    interval: 1000,
     updateOnMove: true,
-    arrows: false,
+    arrows: true,
     breakpoints: {
-        991: {
-            perPage: 2
+        1399: {
+            perPage: 2,
+            padding: 0
         },
         767: {
-            perPage: 1
+            perPage: 1,
+            padding: 100
+        },
+        420: {
+            padding: 0,
+            perPage: 1,
         }
     }
 }).mount();

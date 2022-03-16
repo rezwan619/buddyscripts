@@ -24,7 +24,7 @@
     <!-- <div class="cursor"></div>
     <div class="cursor-follower"></div> -->
     <!-- Header  Section -->
-    <header class="_hero_buddy_wrapper">
+    <header class="_hero_buddy_wrapper" id="hero">
         <!-- Navbar start -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light _hero_buddy_navbar">
             <div class="container">
@@ -41,19 +41,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav _hero_buddy_nav">
                         <li class="nav-item _hero_buddy_nav_item">
-                            <a class="nav-link _hero_buddy_nav_link _active" href="#0">Home</a>
+                            <a class="nav-link _hero_buddy_nav_link" href="#hero">Home</a>
                         </li>
                         <li class="nav-item _hero_buddy_nav_item">
-                            <a class="nav-link _hero_buddy_nav_link" href="#0">Why us</a>
+                            <a class="nav-link _hero_buddy_nav_link" href="#why">Why us</a>
                         </li>
                         <li class="nav-item _hero_buddy_nav_item">
-                            <a class="nav-link _hero_buddy_nav_link" href="#0">Presentation</a>
+                            <a class="nav-link _hero_buddy_nav_link" href="#video">Video</a>
                         </li>
                         <li class="nav-item _hero_buddy_nav_item">
-                            <a class="nav-link _hero_buddy_nav_link" href="#0">Pricing</a>
+                            <a class="nav-link _hero_buddy_nav_link" href="#presentation">Presentation</a>
                         </li>
                         <li class="nav-item _hero_buddy_nav_item">
-                            <a class="nav-link _hero_buddy_nav_link" href="#0">Testimonial</a>
+                            <a class="nav-link _hero_buddy_nav_link" href="#pricing">Pricing</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav _hero_buddy_nav_right">
@@ -127,7 +127,7 @@
     </header>
     <!-- Header  Section Ends -->
     <!-- Why Choose Start -->
-    <section class="_why_buddy_wrapper">
+    <section class="_why_buddy_wrapper" id="why">
         <div class="_why_buddy_wrap">
             <div class="container">
                 <div class="row">
@@ -241,6 +241,24 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="splide__arrows _why_buddy_slider_arrows">
+                                        <button class="splide__arrow splide__arrow--prev _why_prev">
+                                            <svg width="36" height="31" viewBox="0 0 36 31" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M36 15.5C36 14.9128 35.763 14.3497 35.3411 13.9345C34.9192 13.5194 34.3469 13.2861 33.7503 13.2861H7.68466L17.3451 3.78412C17.7675 3.36841 18.0049 2.80458 18.0049 2.21668C18.0049 1.62878 17.7675 1.06496 17.3451 0.649252C16.9226 0.233543 16.3497 0 15.7523 0C15.1548 0 14.5819 0.233543 14.1594 0.649252L0.660947 13.9326C0.451436 14.1382 0.285213 14.3825 0.171797 14.6515C0.0583803 14.9205 -2.77296e-08 15.2088 -2.77296e-08 15.5C-2.77296e-08 15.7912 0.0583803 16.0795 0.171797 16.3485C0.285213 16.6175 0.451436 16.8618 0.660947 17.0674L14.1594 30.3508C14.5819 30.7665 15.1548 31 15.7523 31C16.3497 31 16.9226 30.7665 17.3451 30.3508C17.7675 29.935 18.0049 29.3712 18.0049 28.7833C18.0049 28.1954 17.7675 27.6316 17.3451 27.2159L7.68466 17.7139H33.7503C34.3469 17.7139 34.9192 17.4806 35.3411 17.0655C35.763 16.6503 36 16.0872 36 15.5Z"
+                                                    fill="#222123" />
+                                            </svg>
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next _why_next">
+                                            <svg width="36" height="31" viewBox="0 0 36 31" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0 15.5C0 14.9128 0.237027 14.3497 0.658937 13.9345C1.08085 13.5194 1.65308 13.2861 2.24975 13.2861H28.3153L18.6549 3.78412C18.2325 3.36841 17.9951 2.80458 17.9951 2.21668C17.9951 1.62878 18.2325 1.06496 18.6549 0.649252C19.0774 0.233543 19.6503 0 20.2477 0C20.8452 0 21.4181 0.233543 21.8406 0.649252L35.3391 13.9326C35.5486 14.1382 35.7148 14.3825 35.8282 14.6515C35.9416 14.9205 36 15.2088 36 15.5C36 15.7912 35.9416 16.0795 35.8282 16.3485C35.7148 16.6175 35.5486 16.8618 35.3391 17.0674L21.8406 30.3507C21.4181 30.7665 20.8452 31 20.2477 31C19.6503 31 19.0774 30.7665 18.6549 30.3507C18.2325 29.935 17.9951 29.3712 17.9951 28.7833C17.9951 28.1954 18.2325 27.6316 18.6549 27.2159L28.3153 17.7139H2.24975C1.65308 17.7139 1.08085 17.4806 0.658937 17.0655C0.237027 16.6503 0 16.0872 0 15.5Z"
+                                                    fill="#222123" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +270,7 @@
     <!-- Why Choose ends -->
 
     <!-- Interaction start -->
-    <section class="_inter_buddy_wrapper">
+    <section class="_inter_buddy_wrapper" id="video">
         <div class="_inter_buddy_wrap">
             <img src="assets/images/inter1.png" alt="" class="_inter_buddy_inter1_img _interaction_img">
             <img src="assets/images/inter2.png" alt="" class="_inter_buddy_inter2_img _interaction_img">
@@ -291,7 +309,7 @@
     <!-- Interaction ends -->
 
     <!-- web presentation start -->
-    <section class="_web_buddy_wrapper">
+    <section class="_web_buddy_wrapper" id="presentation">
         <div class="_web_buddy_wrap">
             <div class="container">
                 <div class="row">
@@ -319,7 +337,7 @@
                                     </div>
                                     <div class="splide__slide">
                                         <div class="_web_buddy_slider_con_wrap">
-                                            <img src="assets/images/web1.png" alt="" class="_web_buddy_slider_con_img">
+                                            <img src="assets/images/ball.png" alt="" class="_web_buddy_slider_con_img">
                                             <div class="_web_buddy_slider_con_btm_wrap">
                                                 <p class="_web_buddy_slider_con_btm_txt">Lorem ipsum dolor sit amet,
                                                     consectetur adipiscing elit. Vitae nulla non
@@ -473,9 +491,9 @@
         </div>
     </section>
     <!-- app presentation ends -->
-    <!--  -->
+
     <!-- Pricing start -->
-    <section class="_pricing_buddy_wrapper">
+    <section class="_pricing_buddy_wrapper" id="pricing">
         <div class="_pricing_buddy_wrap">
             <div class="container">
                 <div class="row align-items-end">
@@ -585,7 +603,103 @@
         </div>
     </section>
     <!-- Pricing ends -->
+    <!-- HLS start  -->
+    <section class="_hls_buddy_wrapper">
+        <div class="_hls_buddy_wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="_hls_buddy_left_wrap">
+                            <h2 class="_hls_buddy_left_title">High level product feature</h2>
+                            <p class="_hls_buddy_left_txt">Powering a productive team means using a powerful tool (and
+                                plenty of snacks). From
+                                meetings and projects to events and goal setting,</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                        <div class="_hls_buddy_right_wrap">
+                            <span class="_hls_buddy_right_circle"></span>
+                            <div class="_hls_buddy_right_item">
+                                <div class="_hls_buddy_right_item1">
+                                    <div class="_hls_buddy_right_item_box _hls_item1_box">
+                                        <h6 class="_hls_buddy_right_item_box_title">HLS Video</h6>
+                                        <span class="_hls_buddy_right_item_box_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" fill="none"
+                                                viewBox="0 0 8 10">
+                                                <path fill="#F08D08" d="M8 5.001L.5 9.331V.67L8 5z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="_hls_buddy_right_item_content_box _hls_item1_content_box">
+                                        <h5 class="_hls_buddy_right_item_content_box_title">HLS Video</h5>
+                                        <p class="_hls_buddy_right_item_content_box_txt">Lorem ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Vitae nulla non
+                                            rutrum eget proin volutpat purus suspendisse.</p>
+                                    </div>
+                                </div>
+                                <div class="_hls_buddy_right_item2">
+                                    <div class="_hls_buddy_right_item_box _hls_item2_box">
+                                        <span class="_hls_buddy_right_item_box_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" fill="none"
+                                                viewBox="0 0 14 10">
+                                                <path fill="#FD7566"
+                                                    d="M9.5 10H1a1 1 0 01-1-1V1a1 1 0 011-1h8.5a1 1 0 011 1v2.03l2.71-1.935A.5.5 0 0114 1.5v7a.5.5 0 01-.79.405L10.5 6.97V9a1 1 0 01-1 1z" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="_hls_buddy_right_item_box_title">Live stream</h6>
+                                    </div>
+                                    <div class="_hls_buddy_right_item_content_box _hls_item2_content_box">
+                                        <h5 class="_hls_buddy_right_item_content_box_title">Live stream</h5>
+                                        <p class="_hls_buddy_right_item_content_box_txt">Lorem ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Vitae nulla non
+                                            rutrum eget proin volutpat purus suspendisse.</p>
+                                    </div>
+                                </div>
+                                <div class="_hls_buddy_right_item3">
+                                    <div class="_hls_buddy_right_item_box _hls_item3_box">
+                                        <h6 class="_hls_buddy_right_item_box_title">Fast cache</h6>
+                                        <span class="_hls_buddy_right_item_box_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" fill="none"
+                                                viewBox="0 0 21 16">
+                                                <path fill="#6D7CFF"
+                                                    d="M16.942 4.35l-2.79 2.79c-.32.32-.1.86.35.86h1.79c0 3.31-2.69 6-6 6-.79 0-1.56-.15-2.25-.44-.36-.15-.77-.04-1.04.23-.51.51-.33 1.37.34 1.64.91.37 1.91.57 2.95.57 4.42 0 8-3.58 8-8h1.79c.45 0 .67-.54.35-.85l-2.79-2.79c-.19-.2-.51-.2-.7-.01zM4.292 8c0-3.31 2.69-6 6-6 .79 0 1.56.15 2.25.44.36.15.77.04 1.04-.23.51-.51.33-1.37-.34-1.64-.91-.37-1.91-.57-2.95-.57-4.42 0-8 3.58-8 8H.502c-.45 0-.67.54-.35.85l2.79 2.79c.2.2.51.2.71 0l2.79-2.79a.5.5 0 00-.36-.85h-1.79z" />
+                                            </svg>
+                                        </span>
 
+                                    </div>
+                                    <div class="_hls_buddy_right_item_content_box _hls_item3_content_box">
+                                        <h5 class="_hls_buddy_right_item_content_box_title">Fast cache</h5>
+                                        <p class="_hls_buddy_right_item_content_box_txt">Lorem ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Vitae nulla non
+                                            rutrum eget proin volutpat purus suspendisse.</p>
+                                    </div>
+                                </div>
+                                <div class="_hls_buddy_right_item4">
+                                    <div class="_hls_buddy_right_item_box _hls_item4_box">
+                                        <span class="_hls_buddy_right_item_box_icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                                                viewBox="0 0 16 16">
+                                                <path fill="#CEB064"
+                                                    d="M14.222 0H1.778A1.778 1.778 0 000 1.778v12.444A1.778 1.778 0 001.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0zm-7.11 10.667H5.777V8.889H4v1.778H2.667V5.333H4v2.223h1.778V5.333H7.11v5.334zm1.777-5.334h3.555c.49 0 .89.4.89.89v3.555c0 .489-.4.889-.89.889H8.89V5.333zm1.333 4H12V6.667h-1.778v2.666z" />
+                                            </svg>
+                                        </span>
+                                        <h6 class="_hls_buddy_right_item_box_title">HD quality</h6>
+                                    </div>
+                                    <div class="_hls_buddy_right_item_content_box _hls_item4_content_box">
+                                        <h5 class="_hls_buddy_right_item_content_box_title">HD quality</h5>
+                                        <p class="_hls_buddy_right_item_content_box_txt">Lorem ipsum dolor sit
+                                            amet, consectetur adipiscing elit. Vitae nulla non
+                                            rutrum eget proin volutpat purus suspendisse.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HLS ends  -->
     <!-- Faq start -->
     <section class="_faq_buddy_wrapper">
         <div class="_faq_buddy_wrap">
@@ -785,151 +899,6 @@
         </div>
     </section>
     <!-- Faq ends -->
-
-    <!-- Stat start -->
-    <!-- <section class="_stat_buddy_wrapper">
-        <div class="_stat_buddy_wrap">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="_stat_buddy_left_wrap">
-                            <h2 class="_stat_buddy_left_title">Insights of our product</h2>
-                            <p class="_stat_buddy_left_txt">Lorem ipsum dolor sit amet, consectetur elit, sed do
-                                eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur elit, sed do.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="_stat_buddy_right_wrap">
-                            <div class="_stat_buddy_right_top_wrap">
-                                <div class="_stat_buddy_right_top_users_wrap">
-                                    <img src="assets/images/users.svg" alt="Users"
-                                        class="_stat_buddy_right_top_users_img">
-                                    <h3 class="_stat_buddy_right_top_users_num">82,347</h3>
-                                </div>
-                                <p class="_stat_buddy_right_top_users_txt">Highest people engagement</p>
-                            </div>
-                            <div class="_stat_buddy_right_img_wrap">
-                                <img src="assets/images/stat.svg" alt="Stats" class="_stat_buddy_right_img">
-                            </div>
-                            <div class="_stat_buddy_right_circle_wrap">
-                                <span class="_stat_buddy_right_circle"></span>
-                            </div>
-                            <div class="_stat_buddy_right_bottom_wrap">
-                                <ul class="_stat_buddy_right_bottom_item_wrap">
-                                    <li class="_stat_buddy_right_bottom_item">Jan</li>
-                                    <li class="_stat_buddy_right_bottom_item">Feb</li>
-                                    <li class="_stat_buddy_right_bottom_item">March</li>
-                                    <li class="_stat_buddy_right_bottom_item">April</li>
-                                    <li class="_stat_buddy_right_bottom_item">May</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section> -->
-    <!-- Stat ends -->
-
-    <!-- Testimonial start -->
-    <section class="_testi_buddy_wrapper">
-        <div class="_testi_buddy_wrap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="_testi_buddy_title_wrap">
-                            <h2 class="_testi_buddy_title">People ratings from all over the world</h2>
-                            <p class="_testi_buddy_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
-                                nulla non rutrum eget proin
-                                volutpat purus suspendisse.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="_testi_buddy_map_wrap">
-                    <div class="row">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <div class="_testi_buddy_map">
-                                <img src="assets/images/map.svg" alt="" class="_testi_buddy_map_img">
-                                <div class="_testi_buddy_map_custom_wrap">
-                                    <div class="_testi_buddy_map_custom_card_wrap _card1_wrap">
-                                        <div class="_testi_buddy_map_custom_card _card1">
-                                            <div class="_testi_buddy_map_custom_card_top_wrap">
-                                                <img src="assets/images/testi1.png" alt="Profile Picture"
-                                                    class="_testi_buddy_map_custom_card_top_img">
-                                                <div class="_testi_buddy_map_custom_card_top_right_wrap">
-                                                    <h5 class="_testi_buddy_map_custom_card_top_right_title">John Raine
-                                                    </h5>
-                                                    <p class="_testi_buddy_map_custom_card_top_right_txt">Z-tech CEO
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="_testi_buddy_map_custom_card_txt">Lorem ipsum dolor sit
-                                                amet, consectetur adipiscing elit. Vitae nulla non
-                                                rutrum eget proin volutpat purus suspendisse.</p>
-                                        </div>
-                                    </div>
-                                    <div class="_testi_buddy_map_custom_card_wrap _card2_wrap">
-                                        <div class="_testi_buddy_map_custom_card _card2">
-                                            <div class="_testi_buddy_map_custom_card_top_wrap">
-                                                <img src="assets/images/testi1.png" alt="Profile Picture"
-                                                    class="_testi_buddy_map_custom_card_top_img">
-                                                <div class="_testi_buddy_map_custom_card_top_right_wrap">
-                                                    <h5 class="_testi_buddy_map_custom_card_top_right_title">John Raine
-                                                    </h5>
-                                                    <p class="_testi_buddy_map_custom_card_top_right_txt">Z-tech CEO
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="_testi_buddy_map_custom_card_txt">Lorem ipsum dolor sit
-                                                amet, consectetur adipiscing elit. Vitae nulla non
-                                                rutrum eget proin volutpat purus suspendisse.</p>
-                                        </div>
-                                    </div>
-                                    <div class="_testi_buddy_map_custom_card_wrap _card3_wrap">
-                                        <div class="_testi_buddy_map_custom_card _card3">
-                                            <div class="_testi_buddy_map_custom_card_top_wrap">
-                                                <img src="assets/images/testi1.png" alt="Profile Picture"
-                                                    class="_testi_buddy_map_custom_card_top_img">
-                                                <div class="_testi_buddy_map_custom_card_top_right_wrap">
-                                                    <h5 class="_testi_buddy_map_custom_card_top_right_title">John Raine
-                                                    </h5>
-                                                    <p class="_testi_buddy_map_custom_card_top_right_txt">Z-tech CEO
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="_testi_buddy_map_custom_card_txt">Lorem ipsum dolor sit
-                                                amet, consectetur adipiscing elit. Vitae nulla non
-                                                rutrum eget proin volutpat purus suspendisse.</p>
-                                        </div>
-                                    </div>
-                                    <div class="_testi_buddy_map_custom_card_wrap _card4_wrap">
-                                        <div class="_testi_buddy_map_custom_card _card4">
-                                            <div class="_testi_buddy_map_custom_card_top_wrap">
-                                                <img src="assets/images/testi1.png" alt="Profile Picture"
-                                                    class="_testi_buddy_map_custom_card_top_img">
-                                                <div class="_testi_buddy_map_custom_card_top_right_wrap">
-                                                    <h5 class="_testi_buddy_map_custom_card_top_right_title">John Raine
-                                                    </h5>
-                                                    <p class="_testi_buddy_map_custom_card_top_right_txt">Z-tech CEO
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="_testi_buddy_map_custom_card_txt">Lorem ipsum dolor sit
-                                                amet, consectetur adipiscing elit. Vitae nulla non
-                                                rutrum eget proin volutpat purus suspendisse.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial ends -->
 
     <!-- footer start -->
     <footer class="_footer_buddy_wrapper">
